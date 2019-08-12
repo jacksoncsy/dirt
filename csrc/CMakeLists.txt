@@ -4,6 +4,7 @@ project(dirt LANGUAGES CXX CUDA)
 
 find_package(OpenGL REQUIRED)
 
+
 # Search for EGL; nvidia drivers ship the library but not headers, so we redistribute those
 find_path(EGL_INCLUDE_DIR NAMES EGL/egl.h PATHS ${CMAKE_CURRENT_SOURCE_DIR}/../external REQUIRED)
 find_library(EGL_LIBRARIES NAMES egl EGL REQUIRED)
